@@ -46,8 +46,8 @@ document.getElementById('button').addEventListener('click', () => {
     [lat, long] = data.loc.split(',');
     latEl.textContent = "Lat : "+lat;
     longEl.textContent = "Long : "+long;
-    cityEl.textContent = "city"+data.city;
-    regionEl.textContent = "Region"+data.region;
+    cityEl.textContent = "City : "+data.city;
+    regionEl.textContent = "Region : "+data.region;
     orgEl.textContent = "Org : "+data.org;
     hostEl.textContent = "Host : " +`There is no 'host' property given in the object`
     displayMap(lat, long);
